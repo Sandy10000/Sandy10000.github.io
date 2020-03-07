@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>png file format checker</title>
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="styleffc.css">
+<link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+<div ondrop="onDrop(event);" ondragover="onDragOver(event);">
+  <p>Unparsed chunk: zTXT, hIST, sPLT</p>
+  <input type="file" id="inputfile" onchange="onAddFile();" ><br>
+  <textarea rows="30" cols="80" id="BainryView" readonly></textarea>
+</div>
+<script src = "fileformatchecker.js"></script> 
+<script src = "png.js"></script>
