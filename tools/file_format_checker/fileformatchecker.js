@@ -93,7 +93,7 @@ function onAddFile() {
     }else{
       console.log("other");
     }
-    document.getElementById('BainryView').innerHTML = htmlspecialchars(result) ;  
+    document.getElementById('BinaryView').innerHTML = htmlspecialchars(result) ;  
   };
 
   if (files[0]){    
