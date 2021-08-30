@@ -1,1 +1,0 @@
-{"name":"untitled","x":0,"y":0,"width":1024,"height":600,"elements":[{"id":0,"type":1,"name":"Image","event":"","x":0,"y":0,"width":1024,"height":600,"rotation":0,"text":"My Image","asset":"canvas1.png","color":-1,"anchor":0,"parent":null,"children":[],"visible":true}],"assets":[{"name":"canvas1.png","file":"../../Assets/canvas1.png","id":0}]}
