@@ -1,5 +1,5 @@
-import * as THREE from 'https://github.com/Sandy10000/three.js/tree/dev/build/three.module.js'
-import{OrbitControls}from 'https://github.com/Sandy10000/three.js/tree/dev/examples/jsm/controls/OrbitControls.js'
+import * as THREE from '../../../../l/three/build/three.module.js'
+import{OrbitControls}from '../../../../l/three/examples/jsm/controls/OrbitControls.js'
 
 const scene=new THREE.Scene()
 const camera=new THREE.PerspectiveCamera(45,innerWidth/innerHeight,.1,10)
