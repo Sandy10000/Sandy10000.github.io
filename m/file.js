@@ -57,3 +57,23 @@ export async function importText(filename){
 	const file=await fetch(filename)
 	return await file.text()
 }
+
+export async function loadTextAsync(file){
+	const blob=await fetch(file)
+	return await blob.text()
+}
+
+export function downloadJson(object,filename){
+	const jsonstr=JSON.stringify(object)
+	const blob=new Blob([jsonstr],{type:'application/json'})
+	download(blob,filename)
+}
+
+function download(blob,filename){
+	const L=document.createElement('a')
+	const OBJURL=URL.createObjectURL(blob)
+	L.href=OBJURL
+	L.download=filename
+	L.click()
+	URL.revokeObjectURL(OBJURL)
+}
