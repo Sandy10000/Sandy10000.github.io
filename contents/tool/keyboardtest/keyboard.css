@@ -1,0 +1,74 @@
+button{
+	color:blue;
+	background-color: #ddd;
+	border-left:4px solid #fff;
+	border-top:4px solid #eee;
+	border-right:4px solid #bbb;
+	border-bottom:4px solid #ccc;
+	border-radius:3px;
+	font-family:monospace;
+}
+#keyboard{
+	display:grid;
+	grid-template-columns:5% 19% 19% 19% 12% 16%;
+	gap: 7% 2%;
+}
+#FunctionL{
+	display:grid;grid-template-columns:25% 25% 25% 25%;
+}
+#FunctionC{
+	display:grid;grid-template-columns:25% 25% 25% 25%;
+}
+#FunctionR{
+	display:grid;grid-template-columns:25% 25% 25% 25%;
+}
+#printscreenpause{
+	display:grid;
+	grid-template-columns:33% 34% 33%;
+}
+#main{
+	display:grid;
+	grid-column-start:1;
+	grid-column-end:5;
+}
+#l1{
+	display:grid;
+	grid-template-columns:6.66% 6.66% 6.66% 6.66% 6.66% 6.66% 6.66% 6.67% 6.66% 6.66% 6.66% 6.66% 6.66% 6.66% 6.66%;
+}
+#l2{
+	display: grid;
+	grid-template-columns:9.99% 6.66% 6.66% 6.66% 6.66% 6.66% 6.66% 6.67% 6.66% 6.66% 6.66% 6.66% 6.66% 9.99%;
+}
+#l3{
+	display: grid;
+	grid-template-columns:11.66% 6.66% 6.66% 6.66% 6.66% 6.66% 6.66% 6.66% 6.66% 6.66% 6.66% 6.66% 6.66% 8.42%;
+}
+#l4{
+	display: grid;
+	grid-template-columns:14.99% 6.66% 6.66% 6.66% 6.66% 6.66% 6.66% 6.66% 6.66% 6.66% 6.66% 6.66% 11.66%;
+}
+#l5{
+	display: grid;
+	grid-template-columns:9.99% 8.42% 8.42% 9.99% 16.37% 9.99% 8.42% 6.66% 6.66% 6.66% 8.42%;
+}
+#center{
+	display: grid;
+	grid-template-columns:33% 34% 33%;
+}
+#Numpad{
+	display:grid;
+	grid-template-columns:25% 25% 25% 25%;
+}
+#NumpadAdd{
+	grid-row-start:2;
+	grid-row-end:4;
+	grid-column:4;
+}
+#NumpadEnter{
+	grid-row-start:4;
+	grid-row-end:6;
+	grid-column:4;
+}
+#Numpad0{
+	grid-column:1/span 2;
+}
