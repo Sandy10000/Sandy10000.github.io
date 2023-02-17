@@ -23,6 +23,12 @@ function usbidsLoaderCallback(obj){
 
 async function pointerdown(){
 	const usbDevice=await navigator.usb.requestDevice({'filters':[]})
+	let usbidsVendorName
+	const usbidsVendor=usbids.vendor[usbDevice.vendorId]
+	if(usbidsVendor!=undefined)usbidsVendorName=usbidsVendor.name
+	let usbidsDeviceName
+	const usbidsDevice=usbids.vendor[usbDevice.vendorId].devices[usbDevice.productId]
+	if(usbidsDevice!=undefined)usbidsDeviceName=usbidsDevice.name
 	console.log('usbDevice',usbDevice)
 	text='vendor\n\tvendorId\t:'
 		+usbDevice.vendorId
@@ -30,14 +36,14 @@ async function pointerdown(){
 		+')\n\tmanufactureName:\t'
 		+usbDevice.manufacturerName
 		+'\n\tusb.ids vendor name:\t'
-		+usbids.vendor[usbDevice.vendorId].name
+		+usbidsVendorName
 		+'\n\nproduct\n\tproductId:\t'
 		+usbDevice.productId
 		+'\t(0x'+usbDevice.productId.toString(16)
 		+')\n\tproductName:\t'
 		+usbDevice.productName
 		+'\n\tusb.ids device name:\t'
-		+usbids.vendor[usbDevice.vendorId].devices[usbDevice.productId].name
+		+usbidsDeviceName
 		+'\n\nserialNumber\t'
 		+usbDevice.serialNumber
 		+'\n\ndeviceVersion:\t'
