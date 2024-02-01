@@ -6,7 +6,7 @@ const scene=new THREE.Scene()
 const camera=new THREE.PerspectiveCamera()
 let renderer,controlsWorker
 const directionalLight = new THREE.DirectionalLight()
-const ambientLight = new THREE.AmbientLight()
+const ambientLight = new THREE.AmbientLight(0xff0000)
 const geometry=new THREE.ConeGeometry()
 const material=new THREE.MeshPhongMaterial()
 for(let i=0;i<500;i++){
